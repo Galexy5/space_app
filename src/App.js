@@ -4,11 +4,14 @@ import Apod from "./components/Apod";
 import Mars from "./components/Mars";
 import Index from "./components/Index";
 import Error from "./components/Error"
-import './mine.css';
+
+
 
 function App() {
+  
   return (
-    <div className="App">
+    <>
+    
       <Router>
         <Switch>
       <Route exact path="/"> <Index/></Route>
@@ -17,7 +20,8 @@ function App() {
       <Route path="*"> <Error/></Route>
       </Switch>
       </Router>
-    </div>
+    
+    </>
   );
 }
 
