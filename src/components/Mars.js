@@ -1,6 +1,6 @@
 import React from "react";
 import {MarsApi} from "../apis/MarsAPI";
-import Navbar from "./Navbar";
+import Navigation from "./Navigation";
 
 const apiKey=process.env.REACT_APP_NASA_KEY;
 const url=`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=navcam&api_key=${apiKey}`;
@@ -14,7 +14,7 @@ export  default function Mars(){
 
     return (
         <div>
-            <Navbar/>    
+            <Navigation/>    
             <h2>Mars Rover Photos</h2>
 
             {rover.photos.map((photo)=> (
