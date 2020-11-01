@@ -34,15 +34,19 @@ export default function Index(){
                 </div>
 
             <div className="row pl-5 pr-3  w-100 ">
-                <div className="col-6">
-                    <Link className="d-flex justify-content-center" to="/apod">
+                <div className="col-5">
+                    <Link className="d-flex justify-content-end" to="/apod">
                         <img src="https://freedesignfile.com/upload/2017/08/telescope-icon-vector.png" width="300px" height="300px" alt=""/> 
                     </Link>
                </div>
 
-               <div className="col-6">
+               <div className="col-2 text-white d-flex justify-content-center align-items-center font-weight-bold">
+                    <h1>Space app</h1>
+               </div>
 
-                    <Link className="d-flex justify-content-center" to="/apod">
+               <div className="col-5">
+
+                    <Link className="d-flex justify-content-start" to="/apod">
                         <img src="https://cdn0.iconfinder.com/data/icons/flat-design-galaxy/1701/Saturn1-512.png" width="300px" height="300px" alt=""/> 
                     </Link>
                 </div>
